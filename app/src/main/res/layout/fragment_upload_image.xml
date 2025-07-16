@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:background="#E0E0E0"
+        android:visibility="gone"
+        android:contentDescription="@string/image_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/button_upload_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:text="@string/upload_image"/>
+
+        <Button
+            android:id="@+id/button_predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:text="@string/predict"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/accuracy_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/latency_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>
